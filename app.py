@@ -1,10 +1,10 @@
 import streamlit as st
 import os
 from langchain_helper import generate_name_and_menu, clean_menu_items
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 
-load_dotenv()
+# load_dotenv()
 # api_key = os.getenv("API_KEY")
 api_key = st.secrets["api_keys"]["API_KEY"]
 os.environ["GOOGLE_API_KEY"] = api_key
