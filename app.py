@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # api_key = os.getenv("API_KEY")
-api_key = st.secrets["API_KEY"]
+api_key = st.secrets["api_keys"]["API_KEY"]
 os.environ["GOOGLE_API_KEY"] = api_key
 
 st.set_page_config(layout = "wide")
